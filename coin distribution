@@ -1,0 +1,18 @@
+value=int(input())
+
+#find the number of five rupee coins
+five=int((value-4)/5)
+
+#find the number of one rupee coins
+
+if (value-five*5)%2==0:
+    one=2
+else:
+    one=1
+    
+    
+#find the number of two rupee coins
+
+two=int((value-5*five-1*one)/2)
+
+print (five+two+one,five,two,one)
